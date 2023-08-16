@@ -2,8 +2,27 @@ doctype html
 html(lang='ru-RU')
     head
         meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
         link(rel="stylesheet" type="text/css" href="./static/css/styles.css")
         title Сайт с книгами "По полочкам"
     body
+        .wrapper
+            header.header
+                .container
+                    .header__wrapper
+                        a.header__logo-link.
+                          #[span.visually-hidden Логотип сайта "По полочкам"]
+                          <svg>
+                          <path>
+                          </svg>
+                    p.header__address г. Санкт-Петербург, #[br]  наб. Pеки Карповки, 5 корпус П
+                    .user-header
+                        .user-header__search
+                            input.user-header__search-input(type='text' name='user-headerSearch' placeholder="Поиск по полке...")
+                            button.user-header__search-button(type='submit')
+                                span.visually-hidden Найти
+                                .
+                                    <svg></svg>
+                    a.user-header__basket(href='#')
+                        span.visually-hidden Корзина

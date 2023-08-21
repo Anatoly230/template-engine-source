@@ -1,4 +1,11 @@
 extends ./layout
+
+block variables
+    - const title = 'Книга Фигурная абстракция'
+    - const pageClass = 'book-page'
+    - const contentImagePath = 'static/images/content/'
+    - const pathCommonImg = 'static/images/common/'
+
 block content
     main.book-page
         include ./modules/breadcrumbs

@@ -1,10 +1,17 @@
 extends ./layout
 
+block variables
+    - const title = 'Сайт с книгами "По полочкам"'
+    - const pageClass = 'index-page'
+    - const contentImagePath = 'static/images/content/'
+    - const pathCommonImg = 'static/images/common/'
+
 block content
-    main.index-page
+    main(class= pageClass)
         h1.visually-hidden Магазин по продаже книг "По полочкам"
         include ./modules/hero
         include ./modules/new-books/new-books
         include ./modules/best-books/best-books
         include ./modules/reviews/reviews
         include ./modules/about
+        

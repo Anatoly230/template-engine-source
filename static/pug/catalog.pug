@@ -1,7 +1,14 @@
 extends ./layout
+
+block variables
+    - const title = 'Каталог книг'
+    - const pageClass = 'catalog-page'
+    - const contentImagePath = 'static/images/content/'
+    - const pathCommonImg = 'static/images/common/'
+
 block content
-    main.catalog-page
-        include ./modules/breadcrumbs
-        include ./modules/catalog/catalog
+  main(class= pageClass)
+    include ./modules/breadcrumbs
+    include ./modules/catalog/catalog
 
 
